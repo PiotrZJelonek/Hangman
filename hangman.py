@@ -5,8 +5,7 @@ class Hangman:
     '''
     A Hangman Game that asks the user for a letter and checks if it is in the word.
     It starts with a default number of lives and a random word from the word_list.
-
-    
+ 
     Parameters:
     ----------
     word_list: list
@@ -45,7 +44,7 @@ class Hangman:
         word_guessed = list(s)
         num_letters = len(set(list(word)))
 
-        print(f"The mistery word has {num_letters} characters")
+        print(f"\nThe mistery word has {num_letters} characters")
         print(word_guessed)
 
         self.num_letters = num_letters
@@ -69,9 +68,7 @@ class Hangman:
 
         word = self.word
         word_guessed = self.word_guessed
-
         list_letters = self.list_letters
-
         list_letters.append(letter)
 
         # convert word to a list
